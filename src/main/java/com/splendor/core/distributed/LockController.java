@@ -42,7 +42,7 @@ public class LockController {
         if (redissonLock.isHeldByCurrentThread("lock")) {
             redissonLock.unlock("lock");
         }
-        return "=================================";
+        return "==============================";
     }
 
     @GetMapping("trylock-decrease-stock")
